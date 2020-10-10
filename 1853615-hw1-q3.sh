@@ -24,18 +24,19 @@ do
 	if [ $avg1 != 0 ]
 	then
 		sum=$(echo "scale=2;$sum+$avg1"|bc)
-		num=$num+1
+		num=$[ $num +1 ]
 	fi
 	if [ $avg2 != 0 ]
 	then
         	sum=$(echo "scale=2;$sum+$avg2"|bc)
-		num=$num+1
+		num=$[ $num +1 ]
 	fi
 	if [ $avg3 != 0 ]
 	then
         	sum=$(echo "scale=2;$sum+$avg3"|bc)
-		num=$num+1
+		num=$[ $num +1 ]
 		#echo "$sum"
+		#echo "$num"
 	fi
 done
 #!
